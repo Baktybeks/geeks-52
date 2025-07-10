@@ -1,0 +1,28 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn ($bg-color){
+  border-radius: 8px;
+  background-color: $bg-color;
+}
+
+@mixin responsive ($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin button($bg-color:yellow, $text-color: black, $font-size:16px) {
+  color: $text-color;
+  background-color: $bg-color;
+  font-size: $font-size;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}

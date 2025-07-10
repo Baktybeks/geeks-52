@@ -1,0 +1,126 @@
+.box2 {
+  background-color: green;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Heebo", sans-serif;
+  --container-width: 1920px;
+  --box-width: 200px;
+  --border-radius: 15px;
+  --container-padding-x: 200px;
+  --color-white: #ffffff;
+  --color-primary: green;
+  --color-success: green;
+  --color-info: blue;
+  --color-warning: aqua;
+  --color-danger: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: var(--color-warning);
+  width: var(--box-width);
+  aspect-ratio: 1;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .child {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.btn {
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: blue;
+}
+
+.btn1 {
+  color: blue;
+  background-color: green;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+}
+.btn1:hover {
+  background-color: #004d00;
+}
+
+.btn2 {
+  color: blue;
+  background-color: red;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+}
+.btn2:hover {
+  background-color: #cc0000;
+}
+
+.btn3 {
+  color: blue;
+  background-color: aqua;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+}
+.btn3:hover {
+  background-color: #00cccc;
+}
+
+.btn4 {
+  color: black;
+  background-color: purple;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+}
+.btn4:hover {
+  background-color: #4d004d;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: blue;
+  }
+}
+.banner-title {
+  text-transform: uppercase;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 360px;
+  line-height: 1;
+  color: #000;
+}
+
+.banner-info {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #000;
+}
+.banner-info::before {
+  content: "";
+  width: 200px;
+  aspect-ratio: 1;
+  background: url(./img/arrow.svg) center/contain no-repeat;
+}
+
+.apt {
+  background-color: red;
+}
