@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.primer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.grid-item {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.primer2 {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header header header header" "sidebar main main main" "footer footer footer footer";
+}
+.primer2 .header,
+.primer2 .main,
+.primer2 .sidebar,
+.primer2 .footer {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.primer2 .header {
+  grid-area: header;
+  background-color: aqua;
+}
+.primer2 .sidebar {
+  grid-area: sidebar;
+  background-color: green;
+}
+.primer2 .main {
+  grid-area: main;
+  background-color: red;
+}
+.primer2 .footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
+@media screen and (max-width: 500px) {
+  .primer2 {
+    grid-template-areas: "header" "sidebar" "main" "footer";
+  }
+}
+.primer3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+.primer3 .card {
+  background-color: bisque;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.primer3 .card :hover {
+  transform: translateY(-10px);
+}
+.primer3 .card .imag {
+  height: 150px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primer3 .card .info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.primer3 .card .title {
+  font-weight: bold;
+}
+.primer3 .card .price {
+  color: red;
+}
