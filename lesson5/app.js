@@ -88,16 +88,16 @@ if (15<10) {
   console.log('net');  
 }
 
-let age1 = prompt('сколько вам лет')
-if (age1>=1000) {
-  console.log('бессмертный');
-} else if (age1>=18) {
-  console.log('совершеннолетний');
-} else if (age1>=0) {
-  console.log('не совершеннолетний');
-} else {
-  console.log('не правильно ввели возраст');
-}
+// let age1 = prompt('сколько вам лет')
+// if (age1>=1000) {
+//   console.log('бессмертный');
+// } else if (age1>=18) {
+//   console.log('совершеннолетний');
+// } else if (age1>=0) {
+//   console.log('не совершеннолетний');
+// } else {
+//   console.log('не правильно ввели возраст');
+// }
 
 
 
